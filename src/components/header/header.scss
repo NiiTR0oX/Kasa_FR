@@ -1,0 +1,38 @@
+header .containernav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+
+    a {
+        text-decoration: none;
+
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+    gap: 57px;
+}
+li {
+    display: inline;
+}
+
+.main-nav {
+    width: 22%;
+    text-align: center;
+}
+ul {
+    margin-top: 0px;
+    padding-left: 0px;
+}
+li {
+    border-top: solid 2px transparent;
+    padding-top: 20px ;
+}
