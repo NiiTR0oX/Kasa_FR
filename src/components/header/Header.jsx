@@ -6,11 +6,11 @@ import { NavLink } from "react-router-dom";
 export default function Header() {
   return (
     <header>
-      <div class="containernav">
+      <div className="containernav">
         <a href="#">
           <img src={logo} alt="KASA" />
         </a>
-        <nav class="main-nav">
+        <nav className="main-nav">
           <ul>
             <li>
             <NavLink
