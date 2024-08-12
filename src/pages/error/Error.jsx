@@ -2,7 +2,7 @@ import './Error.scss'
 import Header from "../../components/header/Header";
 import { Link } from 'react-router-dom';
 
-export default function NotFound() {
+export default function Error() {
 	return (
 		<div className='error'>
 			<Header />

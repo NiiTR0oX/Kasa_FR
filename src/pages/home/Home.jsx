@@ -2,6 +2,7 @@ import Banner from './../../components/banner/Banner.jsx'
 import './home.scss'
 import bannerHome from "./../../assets/images/banner/homeBanner.png"
 import React, { useState, useEffect } from 'react';
+import Card from './card.scss';
 
 function Home() {
 
@@ -44,10 +45,7 @@ function Home() {
         <Banner image={bannerHome} title="Chez vous, partout et ailleurs"/>
         <div>
           {data.map((logement)=> (
-            <div key={logement.id}>
-              {logement.title} {logement.cover} {logement.location} {logement.rating}
-              
-            </div>
+            <Card key={logement.id} id={logement.id} title={logement.title} cover={logement.cover}/>
           ))}
         </div>
             
