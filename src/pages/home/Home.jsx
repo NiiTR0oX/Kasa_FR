@@ -44,11 +44,10 @@ function Home() {
         <Banner image={bannerHome} title="Chez vous, partout et ailleurs"/>
         <div>
           {data.map((logement)=> (
-            <Link key={logement.id} to={`/logementDetails/${id}`}>
-               <Card cover={logement.cover} title={logement.title}/>
-
-            </Link>
-
+            <div key={logement.id}>
+              {logement.title} {logement.cover} {logement.location} {logement.rating}
+              
+            </div>
           ))}
         </div>
             

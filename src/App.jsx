@@ -5,10 +5,7 @@ import Apropos from "./pages/apropos/Apropos.jsx"
 import Header from "./components/header/Header.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import LogementDetails from "./pages/logementdetail/LogementDetails.jsx";
-import Error from "./pages/error/Error.jsx";
-// import Card from "./components/card/Card.jsx";
-// import Carousel from "./components/carousel/Carousel.jsx";
-// import Collapse from "./components/collapse/collapse.jsx";
+import Card from "./components/card/Card.jsx";
 
 function App() {
   return (
@@ -20,7 +17,7 @@ function App() {
         <Route path="/a-propos" element={<Apropos/>} />
         <Route path="/logmentdetail" element={<LogementDetails/>} />
         <Route path="*" element={<Error/>} />
-        <Route path="/logementdetail/:id" element={<LogementDetail />} />
+        <Route path="/card" element={<Card/>} />
       </Routes>
       <Footer/>
     </BrowserRouter> 
