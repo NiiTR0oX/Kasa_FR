@@ -44,10 +44,11 @@ function Home() {
         <Banner image={bannerHome} title="Chez vous, partout et ailleurs"/>
         <div>
           {data.map((logement)=> (
-            <div key={logement.id}>
-              {logement.title}
-              {/* créer le composant card / mise en forme / composant link react  */}
-            </div>
+            <Link key={logement.id} to={`/logementDetails/${id}`}>
+               <Card cover={logement.cover} title={logement.title}/>
+
+            </Link>
+
           ))}
         </div>
             
