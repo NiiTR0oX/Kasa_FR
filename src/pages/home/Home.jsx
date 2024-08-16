@@ -2,7 +2,7 @@ import Banner from './../../components/banner/Banner.jsx'
 import './home.scss'
 import bannerHome from "./../../assets/images/banner/homeBanner.png"
 import React, { useState, useEffect } from 'react';
-import Card from './card.scss';
+import Card from './../../components/card/Card.jsx';
 
 function Home() {
 

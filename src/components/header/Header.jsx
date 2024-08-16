@@ -10,7 +10,7 @@ export default function Header() {
         <a href="#">
           <img src={logo} alt="KASA" />
         </a>
-        <nav className="main-nav">
+        <nav className="main_nav">
           <ul>
             <li>
             <NavLink

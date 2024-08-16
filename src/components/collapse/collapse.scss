@@ -1,9 +1,9 @@
 .collapse{
-    background-color: $color-tertiary;
     max-width: 1100px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     margin: 0 auto;
+    background-color: #FF6060;
     font-size: inherit;
     &_title{
         @include flex(row, space-between, center);

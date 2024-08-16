@@ -5,7 +5,6 @@ import Apropos from "./pages/apropos/Apropos.jsx"
 import Header from "./components/header/Header.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import LogementDetails from "./pages/logementdetail/LogementDetails.jsx";
-import Card from "./components/card/Card.jsx";
 
 function App() {
   return (
@@ -15,9 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/a-propos" element={<Apropos/>} />
-        <Route path="/logmentdetail" element={<LogementDetails/>} />
+        <Route path="/logement-detail/:id" element={<LogementDetails/>} />
         <Route path="*" element={<Error/>} />
-        <Route path="/card" element={<Card/>} />
       </Routes>
       <Footer/>
     </BrowserRouter> 

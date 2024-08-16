@@ -1,9 +1,9 @@
 import './carousel.scss'
-import ArrowRight from '../../assets/chevron_carousel_right.png'
-import ArrowLeft from '../../assets/chevron_carousel_left.png'
+import ArrowRight from './../../assets/images/carrousel/flech-right.png'
+import ArrowLeft from './../../assets/images/carrousel/flech-left.png'
 import { useState } from 'react'
 
-export default function Slider({imageSlider}) {
+export default function Carousel({imageSlider}) {
 
     const [currentIndex, setCurrentIndex] = useState(0)
 
