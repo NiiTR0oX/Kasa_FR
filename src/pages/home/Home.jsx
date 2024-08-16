@@ -3,7 +3,7 @@ import './home.scss'
 import bannerHome from "./../../assets/images/banner/homeBanner.png"
 import React, { useState, useEffect } from 'react';
 import Card from './../../components/card/Card.jsx';
-import Gallery from './../../components/gallery/Gallery.jsx';
+import Gallery from '../../components/gallery/Gallery.jsx';
 
 function Home() {
 
@@ -49,7 +49,7 @@ function Home() {
             <Card key={logement.id} id={logement.id} title={logement.title} cover={logement.cover}/>
           ))}
         </div>
-            
+        <Gallery locations={data} />
       </main>
       
     </div>

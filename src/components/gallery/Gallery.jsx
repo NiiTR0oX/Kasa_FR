@@ -1,19 +1,18 @@
-import React from 'react'
-import Card from './../card/Card'
+import React from 'react';
+import './gallery.scss';
 
-export default function Gallery() {
+const Gallery = ({ locations }) => {
   return (
-        <main className='home_gallery'>
-            {datas.map(data => {
-                return (
-                    <Card
-                        key={data.id}
-                        id={data.id}
-                        title={data.title}
-                        cover={data.cover}
-                    />
-                )
-            })}
-        </main>
-    )
-}
+    <div className="gallery">
+      {locations.slice(0, 6).map((location) => (
+        <div className="gallery-block" key={location.id}>
+          <div className="gallery-block-content">
+            <h2>{location.title}</h2>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Gallery;

@@ -42,7 +42,6 @@ export default function LogementDetails() {
       <Collapse title="Description" content={logement.description}/>
       <Collapse title="Équipements" content={logement.equipments}/>
       <Rating rating={Rating} />
-      <Gallery />
     </div>
   )
 }

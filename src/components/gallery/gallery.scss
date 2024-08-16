@@ -1,17 +1,41 @@
-.home_gallery{
-    @include flex;
+.gallery {
+    display: flex;
     flex-wrap: wrap;
-    gap: 50px;
-    background-color: $color-tertiary;
-    padding: 50px;
-    border-radius: 25px;
-    width: 95%;
-    margin: 0 auto;
-    @media screen and (max-width: 1230px){
-        gap: 25px; 
-        padding:25px 15px;       
+    justify-content: center;
+    gap: 20px; /* Adjust as needed */
+    margin-top: 56px;
+  }
+  
+  .gallery-block {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px 0 0 0;
+    background: #FF6060; /* Background couleur principale */
+    opacity: 1; /* Visible par défaut */
+  
+    &:hover {
+      opacity: 0.8; /* Ajuste l'opacité au survol si nécessaire */
     }
-    @media screen and (max-width: 550px){  
-        width: 100%;
+  
+    &-content {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px; /* Ajuste selon les besoins */
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(10, 10, 10, 0) 42%,
+        rgba(4, 4, 4, 0.205) 99.99%,
+        rgba(0, 0, 0, 0.5) 100%
+      );
+      color: white;
+      text-align: center;
+      border-radius: 0 0 10px 10px;
     }
-}
+  
+    h2 {
+      margin: 0;
+    }
+  }
