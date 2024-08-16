@@ -40,7 +40,7 @@ export default function LogementDetails() {
       <Carousel imageSlider={logement.pictures} />
       <Collapse title="Description" content={logement.description}/>
       <Collapse title="Équipements" content={logement.equipments}/>
-      <Rating />
+      <Rating rating={Rating} />
     </div>
   )
 }

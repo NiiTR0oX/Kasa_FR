@@ -1,7 +1,7 @@
-import greyStar from './../rating/starRed.png';
-import redStar from '../../rating/starGrey.png';
+import StarGrey from './../../assets/images/rating/StarGrey.png';
+import StarRed from './../../assets/images/rating/StarRed.png';
 
-export default function Rating({ rating }) {
+export default function Rating({rating}) {
 
     return (
         <div>
