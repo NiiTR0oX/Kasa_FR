@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import Carousel from "./../../components/carousel/Carousel"
 import Collapse from '../../components/collapse/collapse'
 import Rating from './../../components/rating/rating'
+import Gallery from '../../components/gallery/Gallery'
 
 export default function LogementDetails() {
   const {id} = useParams()
@@ -41,6 +42,7 @@ export default function LogementDetails() {
       <Collapse title="Description" content={logement.description}/>
       <Collapse title="Équipements" content={logement.equipments}/>
       <Rating rating={Rating} />
+      <Gallery />
     </div>
   )
 }

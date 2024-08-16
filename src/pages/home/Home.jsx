@@ -3,6 +3,7 @@ import './home.scss'
 import bannerHome from "./../../assets/images/banner/homeBanner.png"
 import React, { useState, useEffect } from 'react';
 import Card from './../../components/card/Card.jsx';
+import Gallery from './../../components/gallery/Gallery.jsx';
 
 function Home() {
 
