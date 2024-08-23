@@ -1,27 +1,54 @@
+.appartment_collapse_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  
+    // Assure-toi que les enfants prennent l'espace disponible correctement
+    .collapse {
+      flex: 1;
+      margin-right: 10px; // espace entre les deux colonnes
+  
+      &:last-child {
+        margin-right: 0; // Pas d'espace après le dernier élément
+      }
+    }
+  }
+
 .collapse{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: flex-start;
     max-width: 1100px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
     margin: 0 auto;
-    background-color: #FF6060;
-    font-size: inherit;
+    
     &_title{
-        // @include flex(row, space-between, center);
-        // background-color: $color-secondary;
-        // color: $color-primary;
-        // border-radius: 10px;
-        // font-weight: 500;
-        // font-size: clamp(13px, 1.8vw, 18px);
-        // padding: 10px 15px;
-        // cursor: pointer;
+        color: #fff;
+        background-color: #FF6060;
+        width: 582px;
+        height: 52px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2%;
+        box-sizing: border-box;
+        gap: 76px;
+        img {
+            width: 24px;
+            height: 13px;
+
+            // jouer hauteur largeur pour la flèche ici
+        }
         .arrow{
             transition: all 0.2s ease-in-out;
             @media screen and (max-width: 1230px){
-                width: 12px;     
+                width: 12px;
             }
         }
         .arrow_up{
-            transform: rotate(0deg);
+            transform: rotate(180deg);
         }
         .arrow_down{
             transform: rotate(180deg);
@@ -30,18 +57,28 @@
     &_content{
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        width: 87%;
         letter-spacing: 1px;
         visibility: visible;
+        margin: -3px 0 20px 0;
         opacity: 1;
         height: auto;
-        padding: 10px;
+        padding: 15px;
         letter-spacing: 1px;
         font-size: clamp(12px, 1.8vw, 18px);
-        // color:
         transition: visibility 0.5s ease-in-out,
                     opacity 0.5s ease-in-out,
                     height 0.2s ease-in-out;
+        background: #f6f6f6;
+        p{
+            display: flex;
+
+            height: 1%;
+
+            font-family: 'Monserrat' , sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+        }
     }
     &_content_hidden{
         visibility: hidden;
@@ -68,3 +105,4 @@
         }    
     }
 }
+

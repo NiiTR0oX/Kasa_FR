@@ -4,35 +4,50 @@ header .containernav {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0;
-
-    a {
-        text-decoration: none;
-
-        font-family: 'Montserrat';
-        font-weight: 500;
-        font-size: 16px;
-    }
 }
+
+header .containernav a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #000;
+}
+
 ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     justify-content: flex-end;
     gap: 57px;
+    margin-top: 0;
+    padding-left: 0;
 }
+
 li {
     display: inline;
+    position: relative;
+    border-top: solid 2px transparent;
+    padding-top: 20px;
 }
 
 .main_nav {
     width: 22%;
     text-align: center;
 }
-ul {
-    margin-top: 0px;
-    padding-left: 0px;
+
+.main_nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 0;
+    height: 1px;
+    background-color: #000;
+    transition: width 0.3s ease;
 }
-li {
-    border-top: solid 2px transparent;
-    padding-top: 20px ;
+
+.main_nav a.active::after,
+.main_nav a:hover::after {
+    width: 100%;
 }

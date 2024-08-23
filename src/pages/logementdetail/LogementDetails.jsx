@@ -1,9 +1,10 @@
 import React, { useState , useEffect} from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Carousel from "./../../components/carousel/Carousel"
-import Collapse from '../../components/collapse/collapse'
-import Rating from './../../components/rating/rating'
-import Gallery from '../../components/gallery/Gallery'
+import Collapse from '../../components/collapse/Collapse'
+import Rating from './../../components/rating/Rating'
+import Tag from './../../components/tag/Tag'
+// import './logementdetails.scss'
 
 export default function LogementDetails() {
   const {id} = useParams()
@@ -39,14 +40,29 @@ export default function LogementDetails() {
   return (
     <div>
       <Carousel imageSlider={logement.pictures} />
-      <Collapse title="Description" content={logement.description}/>
-      <Collapse title="Équipements" content={logement.equipments}/>
-      <Rating rating={Rating} />
-    </div>
+      <div className='info_container'>
+        <div className='part_one'>
+          <h1>{logement.title}</h1>
+          <p>{logement.location}</p>
+          <div className='tag_container'>
+          {logement.tags.map((tag , index)=> (
+            <Tag key={`${index}`} title={tag} />
+          ))}
+          </div>
+        </div>
+        <div className='part_two'>
+          <div className='host'>
+            <h3>{logement.host.name}</h3>
+            <img src={logement.host.picture} alt={logement.host.name}/>
+          </div>
+            <Rating rating={Rating} />
+        </div>
+      </div>
+      <div className='appartment_collapse_container'>
+        <Collapse title="Description" content={logement.description}/>
+        <Collapse title="Équipements" content={logement.equipments}/>
+      </div>
+      
+      </div>
   )
 }
-
-
-// mise en forme le toute les pages 
-// faire tout le responsive
-// composent rating et la mise en forme 

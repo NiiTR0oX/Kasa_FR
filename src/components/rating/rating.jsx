@@ -8,7 +8,7 @@ export default function Rating({rating}) {
             {[...Array(5)].map((star, index) => {
                 const ratingValue = index + 1;
                 return (
-                    <img key={index} src={ratingValue <= rating ? redStar : greyStar} alt="star" />
+                    <img key={index} src={ratingValue <= rating ? StarRed : StarGrey} alt="star" />
                 )
             })}
         </div>

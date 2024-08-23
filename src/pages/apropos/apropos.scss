@@ -1,0 +1,16 @@
+.about_collapse_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 20px 10px 15px;
+    gap: 30px;
+
+    &_content_hidden {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+    }
+}

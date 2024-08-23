@@ -1,0 +1,28 @@
+
+.tag_container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.tag {
+    display: flex;
+    justify-content: center; /* Centre le titre horizontalement */
+    align-items: center; /* Centre le titre verticalement */
+
+    width: 115px; /* Réduction de la largeur du tag */
+    height: 25px; /* Réduction de la hauteur du tag */
+
+    background: #FF6060;
+    border-radius: 10px;
+
+    h3 {
+
+        color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0;
+    }
+  }
+// mise en forme

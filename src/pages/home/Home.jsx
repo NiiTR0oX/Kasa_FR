@@ -3,7 +3,6 @@ import './home.scss'
 import bannerHome from "./../../assets/images/banner/homeBanner.png"
 import React, { useState, useEffect } from 'react';
 import Card from './../../components/card/Card.jsx';
-import Gallery from '../../components/gallery/Gallery.jsx';
 
 function Home() {
 
@@ -44,12 +43,11 @@ function Home() {
       
       <main className="home-content">
         <Banner image={bannerHome} title="Chez vous, partout et ailleurs"/>
-        <div>
+        <div className='card_container'>
           {data.map((logement)=> (
             <Card key={logement.id} id={logement.id} title={logement.title} cover={logement.cover}/>
           ))}
         </div>
-        <Gallery locations={data} />
       </main>
       
     </div>

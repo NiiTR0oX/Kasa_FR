@@ -19,7 +19,7 @@ export default function Header() {
                   isActive ? "active" : ""
                 }
               >
-                Acceuil
+                Accueil
               </NavLink>
             </li>
             <li>
