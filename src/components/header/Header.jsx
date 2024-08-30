@@ -8,7 +8,7 @@ export default function Header() {
     <header>
       <div className="containernav">
         <a href="#">
-          <img src={logo} alt="KASA" />
+          <img src={logo} alt="KASA" className="logo"/>
         </a>
         <nav className="main_nav">
           <ul>

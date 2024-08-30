@@ -2,8 +2,10 @@ header .containernav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     padding: 0;
+    max-width: 1230px;
+    margin: 0 auto;
 }
 
 header .containernav a {
@@ -51,3 +53,35 @@ li {
 .main_nav a:hover::after {
     width: 100%;
 }
+
+@media screen and (max-width: 1200px) {
+    header .containernav {
+        width: 90%;
+    }
+
+    .main_nav {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    
+
+    .main_nav {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .containernav a {
+        width: 40%;
+    }
+    .logo {
+        width: 100%;
+    }
+
+    .main_nav ul {
+        gap: 25px;
+    }
+}
+

@@ -1,10 +1,10 @@
 import React, { useState , useEffect} from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Carousel from "./../../components/carousel/Carousel"
-import Collapse from '../../components/collapse/Collapse'
+import Collapse from './../../components/collapse/Collapse'
 import Rating from './../../components/rating/Rating'
-import Tag from './../../components/tag/Tag'
-// import './logementdetails.scss'
+import Tag from './../../components/tag/Tag' 
+import './logementdetail.scss'
 
 export default function LogementDetails() {
   const {id} = useParams()
@@ -55,7 +55,9 @@ export default function LogementDetails() {
             <h3>{logement.host.name}</h3>
             <img src={logement.host.picture} alt={logement.host.name}/>
           </div>
-            <Rating rating={Rating} />
+          <div className='rating'>
+            <Rating rating={logement.rating} />
+          </div>
         </div>
       </div>
       <div className='appartment_collapse_container'>
