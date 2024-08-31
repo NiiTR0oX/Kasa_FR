@@ -19,3 +19,15 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .about_collapse_container {
+        width: 75%;
+    }
+}
+
+@media  screen and (max-width: 375px) {
+    .about_collapse_container {
+        width: 90%;
+    }
+}

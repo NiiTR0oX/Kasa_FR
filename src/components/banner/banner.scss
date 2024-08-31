@@ -40,16 +40,13 @@
     .banner_background {
         width: 90%;
     }
-
-    // .banner_background h1 {
-    //     font-size: 30px; /* Taille du texte légèrement réduite */
-    // }
 }
 
-/* Media queries pour 735px */
 @media (max-width: 735px) {
-    .banner_background {
-        max-width: 95%;
+
+    .banner_background img {
+        height: 111px;
+        border: 1px;
     }
 
     .banner_background h1 {
@@ -57,8 +54,8 @@
     }
 }
 
-/* Media queries pour 500px */
-@media (max-width: 500px) {
+@media (max-width: 480px) {
+
     .banner_background {
         max-width: 100%;
     }
@@ -68,13 +65,26 @@
     }
 }
 
-/* Media queries pour 375px */
 @media (max-width: 375px) {
+
+    .banner_container {
+        max-width: 100%;
+        border-radius: 10px;
+    }
     .banner_background {
         max-width: 100%;
+        text-align: left;
+        border-radius: 10px;
+    }
+
+    .banner_background img {
+        border-radius: 10px;
     }
 
     .banner_background h1 {
         font-size: 18px;
+        width: 52%;
+        left: 30%;
+        
     }
 }
