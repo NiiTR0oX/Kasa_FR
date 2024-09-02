@@ -2,10 +2,9 @@ header .containernav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // flex-wrap: wrap;
     padding: 0;
     max-width: 1230px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
 }
 
 header .containernav a {
@@ -56,7 +55,7 @@ li {
 
 @media screen and (max-width: 1200px) {
     header .containernav {
-        width: 90%;
+        width: 93%;
     }
 
     .main_nav {

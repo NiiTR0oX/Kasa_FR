@@ -39,7 +39,7 @@ function Home() {
     return <div>Erreur : {error}</div>;
   }
   return (
-    <div id="root">
+    <div>
       
       <main className="home-content">
         <Banner image={bannerHome} title="Chez vous, partout et ailleurs"/>

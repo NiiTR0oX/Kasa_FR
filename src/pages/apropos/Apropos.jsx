@@ -6,7 +6,7 @@ import Collapse from './../../components/collapse/Collapse'
 
 export default function Apropos() {
   return (
-    <div id="root">
+    <div>
       <Banner image={bannerAbout}/>
       <div className='about_collapse_container'>
         <Collapse title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." />

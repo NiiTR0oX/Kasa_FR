@@ -7,11 +7,11 @@
 
 .tag {
     display: flex;
-    justify-content: center; /* Centre le titre horizontalement */
-    align-items: center; /* Centre le titre verticalement */
+    justify-content: center;
+    align-items: center;
 
-    width: 115px; /* Réduction de la largeur du tag */
-    height: 25px; /* Réduction de la hauteur du tag */
+    width: 115px;
+    height: 25px;
 
     background: #FF6060;
     border-radius: 10px;
@@ -28,8 +28,8 @@
 
 @media (max-width: 375px) {
     .tag {
-        width: 23%; /* Réduction de la largeur */
-        height: 15%; /* Réduction de la hauteur */
+        width: 23%;
+        height: 15%;
     }
 
     .tag h3 {

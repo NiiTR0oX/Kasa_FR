@@ -5,6 +5,7 @@ import Apropos from "./pages/apropos/Apropos.jsx"
 import Header from "./components/header/Header.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import LogementDetails from "./pages/logementdetail/LogementDetails.jsx";
+import Error from "./pages/error/Error.jsx";
 
 function App() {
   return (
